@@ -1,0 +1,55 @@
+body {
+  background: #23272e;
+  color: #d4d4d4;
+  font-family: "Fira Mono", "Consolas", "Monaco", monospace;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.code-container {
+  background: #1e1e1e;
+  border-radius: 8px;
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 32px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+}
+
+pre,
+code {
+  background: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1.05em;
+  line-height: 1.6;
+  white-space: pre;
+  overflow-x: auto;
+}
+
+pre {
+  margin: 0;
+}
+
+h1 {
+  color: #d4366b;
+  font-family: "Fira Mono", "Consolas", "Monaco", monospace;
+  font-size: 2em;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* Optional: basic syntax highlighting */
+.keyword {
+  color: #569cd6;
+}
+.string {
+  color: #ce9178;
+}
+.comment {
+  color: #6a9955;
+  font-style: italic;
+}
+.function {
+  color: #dcdcaa;
+}

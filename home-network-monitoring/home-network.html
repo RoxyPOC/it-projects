@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Network Monitoring Lab</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <h1>This project documents my setup of a home network monitoring system using router configuration and network
+        scanning tools to identify devices, monitor traffic, and enhance network security.
+    </h1>
+
+    <h2>🔧 Router Configuration Steps</h2>
+    <h3>1. Basic Security Setup</h3>
+    <ul>
+        <li>
+            Changed default admin credentials (admin/admin → secure credentials)
+        </li>
+        <li>Updated WiFi SSID and set WPA2-PSK encryption</li>
+        <li>Disabled WPS and remote administration</li>
+        <li>Enabled automatic firmware updates</li>
+    </ul>
+
+    <h3>2. DHCP Reservations</h3>
+    <pre>
+        <code>Reserved IPs:
+            - NAS Server: 192.168.1.10
+            - Main PC: 192.168.1.20
+            - Printer: 192.168.1.30</code>
+    </pre>
+
+    <h3>3. Port Forwarding (Example)</h3>
+
+    <pre><code>Service: Home Web Server
+            Internal IP: 192.168.1.20
+            Ports: TCP 80, 443</code></pre>
+
+    <h3>🔍 Network Scanning Techniques</h3>
+    <h4>Basic Network Discovery</h4>
+    <pre><code># Ping sweep to find active devices
+            nmap -sn 192.168.1.0/24
+
+            # Alternative using Angry IP Scanner:
+            angryipscanner -r 192.168.1.1-192.168.1.254</code></pre>
+    <h4>Advanced Scanning</h4>
+    <pre>
+        <code># OS and service detection
+            nmap -A -T4 192.168.1.100
+
+            # Scan specific ports
+            nmap -p 22,80,443 192.168.1.0/24
+
+            # Detect vulnerable devices
+            nmap --script vuln 192.168.1.100</code>
+    </pre>
+    <h3>📊 Sample Scan Output Analysis</h3>\
+    <p>Nmap scan report for 192.168.1.100<br>
+        Host is up (0.0032s latency).<br>
+        MAC Address: 00:1A:2B:3C:4D:5E (Intel Corporate)<br>
+        PORT STATE SERVICE<br>
+        22/tcp open ssh<br>
+        80/tcp open http<br>
+        443/tcp open https<br>
+
+        Nmap scan report for 192.168.1.101<br>
+        Host is up (0.0051s latency).<br>
+        MAC Address: 00:1B:2C:3D:4E:5F (Samsung Electronics)</p>
+</body>
+
+</html>

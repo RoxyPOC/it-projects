@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VM Lab Notes</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <h2>This project documents my setup and testing of a Windows 10 virtual environment using VirtualBox. The lab serves
+        as a safe environment for practicing system administration tasks, troubleshooting common Windows issues, and
+        testing configurations without affecting physical hardware.
+    </h2>
+
+    <h3>🛠 Tools Used</h3>
+    <ul>
+        <li>
+            - <a href="https://www.virtualbox.org/">Oracle VirtualBox</a> (Version 6.1+ recommended)
+        </li>
+        <li>- Windows 10 ISO (21H2 or newer)</li>
+        <li>- <a href="https://www.vagrantup.com/">Vagrant</a> (Optional for automation)</li>
+        <li>- <a href="https://notepad-plus-plus.org/">Notepad++</a> / Markdown editors</li>
+        <li>- <a href="https://docs.microsoft.com/en-us/sysinternals/">Windows Sysinternals Suite</a></li>
+    </ul>
+
+    <h3>🔧 Lab Objectives</h3>
+    <ul>
+        <li>
+            - [x] Create and configure a Windows 10 VM from scratch
+        </li>
+        <li>- [x] Practice OS installation and snapshot management</li>
+        <li>- [x] Simulate real-world troubleshooting scenarios</li>
+        <li>- [x] Test group policy and permission changes</li>
+        <li>- [x] Configure virtual networking environments</li>
+    </ul>
+
+    <h3>🖥 Virtual Machine Specifications</h3>
+    <p>| Component | Configuration |</p>
+    <p>|-----------------|-------------------------|</p>
+    <p>| vCPU | 2 cores |</p>
+    <p>| Memory | 4GB RAM |</p>
+    <p>| Storage | 50GB dynamically allocated |</p>
+    <p>| Network | NAT + Host-only adapter |</p>
+    <p>| Display | 128MB VRAM, 3D enabled |</p>
+
+    <h3>VirtualBox Configuration</h3>
+    <p>Create new VM (CLI alternative)</p>
+    <ul>
+        <li>VBoxManage createvm --name "Win10-Lab" --ostype "Windows10_64" --register</li>
+        <li>VBoxManage modifyvm "Win10-Lab" --memory 4096 --cpus 2</li>
+        <li>VBoxManage createhd --filename "Win10.vdi" --size 50000</li>
+    </ul>
+</body>
+
+</html>

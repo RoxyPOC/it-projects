@@ -1,0 +1,22 @@
+# 🌐 Home Network Monitoring Lab
+
+## 📡 Overview
+This project documents my setup of a home network monitoring system using router configuration and network scanning tools to identify devices, monitor traffic, and enhance network security.
+
+## 🛠 Tools & Technologies
+- **Network Scanning**: `nmap`, `Angry IP Scanner`
+- **Router**: TP-Link Archer C7 (or your router model)
+- **Protocol Analyzers**: Wireshark (optional)
+- **Command Line**: Windows CMD, Linux Terminal
+- **Mobile Apps**: Fing Network Scanner
+
+## 🏠 Network Diagram
+```plaintext
+[Internet]
+    |
+[Modem/Router] (192.168.1.1)
+    |--- [Desktop] (192.168.1.100) - DHCP Reserved
+    |--- [Laptop] (192.168.1.101)
+    |--- [Smartphone] (192.168.1.102)
+    |--- [IoT Device] (192.168.1.103)
+    └--- [Unknown Device] (192.168.1.104)
