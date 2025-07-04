@@ -1,0 +1,30 @@
+[33mcommit 4cade1496383248aacc8578023817edc40598c87[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: RoxyPOC <eleioan97@gmail.com>
+Date:   Fri Jul 4 16:00:13 2025 +0200
+
+    final it project
+
+[33mcommit f44ab9587ba9c527c1f82fbeeeb9d2185658eda4[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Roxy R <eleioan97@gmail.com>
+Date:   Fri Jul 4 14:50:48 2025 +0200
+
+    Update README.md
+
+[33mcommit 308c7b2664b73fd453d30155e2b5219512ff20ac[m
+Merge: c49bb85 59d49d4
+Author: RoxyPOC <eleioan97@gmail.com>
+Date:   Fri Jul 4 14:41:49 2025 +0200
+
+    Merge branch 'main' of https://github.com/RoxyPOC/it-projects
+
+[33mcommit c49bb852abf9dbc0d1d5c0a2e2b95b22f1ebbcbb[m
+Author: RoxyPOC <eleioan97@gmail.com>
+Date:   Fri Jul 4 14:32:44 2025 +0200
+
+    IT projects
+
+[33mcommit 59d49d4c775cebcd8d904d58d24afed16ffb4878[m
+Author: Roxy R <eleioan97@gmail.com>
+Date:   Fri Jul 4 14:22:40 2025 +0200
+
+    Initial commit
